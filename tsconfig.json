@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
