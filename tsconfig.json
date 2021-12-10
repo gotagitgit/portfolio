@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "module": "ESNext",
-    "jsx": "react",
+    "jsx": "react-jsx",    
+    "module": "ESNext",    
     "moduleResolution": "node",
-    "target": "es6",
-    "lib": ["ES2015", "DOM", "DOM.Iterable"],
-    "sourceMap": true
+    "target": "ES5",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
