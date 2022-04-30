@@ -1,11 +1,11 @@
-const path = require("path");
+const path = require('path')
 const HtmWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {  
+module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
-  },  
+    extensions: ['.tsx', '.ts', '.js'],
+  },
   module: {
     rules: [
       {
@@ -17,10 +17,10 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader'],
+      // },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
@@ -28,16 +28,16 @@ module.exports = {
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
-      }
-    ]
+      },
+    ],
   },
   output: {
     path: path.resolve(__dirname, '..', '.build'),
-    filename: "bundle.js"
+    filename: 'bundle.js',
   },
   plugins: [
     new HtmWebpackPlugin({
       template: path.resolve(__dirname, '..', './src/index.html'),
-    })
+    }),
   ],
-};
+}

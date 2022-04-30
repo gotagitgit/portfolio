@@ -1,0 +1,20 @@
+.rating {
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px;
+  }
+  .on {
+    // color: #000;
+    color: rgb(74, 202, 168);
+  }
+  .off {
+    // color: #ccc;
+    color: #d2f2e9;
+  }
+  .rate-icon {
+    font-size: x-large;
+  }
+}
